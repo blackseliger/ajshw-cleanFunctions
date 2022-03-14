@@ -1,21 +1,19 @@
-import showColor from "../js/app";
+import showColor from '../js/app';
 
 test('should show critical', () => {
-    const result = showColor({name: 'Маг', health: 14})
+  const result = showColor({ name: 'Маг', health: 14 });
 
-    expect(result).toBe('critical')
-})
-
+  expect(result).toBe('critical');
+});
 
 test('should show wounded', () => {
-    const result = showColor({name: 'Маг', health: 36})
+  const result = showColor({ name: 'Маг', health: 36 });
 
-    expect(result).toBe('wounded')
-})
-
+  expect(result).toBe('wounded');
+});
 
 test('should show healthy', () => {
-    const result = showColor({name: 'Маг', health: 58})
+  const result = showColor({ name: 'Маг', health: 58 });
 
-    expect(result).toBe('healthy')
-})
+  expect(result).toBe('healthy');
+});
